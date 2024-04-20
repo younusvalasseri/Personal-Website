@@ -159,6 +159,11 @@
     border: 1px solid black;
     transition: .5s;
 }
+
 .card-text {
     align-content: center;
+}
+
+.redtext {
+    color: red;
 }
