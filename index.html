@@ -13,6 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -369,7 +370,7 @@
                                     </div>
                                 </div>
 
-                                <div class=" card-body text-center card-text">
+                                <div class="card-body card-text">
                                     <p class="card-text">Co ordinated and mentored many kids clubs online and offline
                                     </p>
                                 </div>
@@ -385,34 +386,46 @@
         <div class="container">
             <h1 class="text-center text-white">Contact Me</h1>
             <div class="row">
-                <form id="submit-form" action="">
+                <form id="submit-form" action="" onsubmit="return validate()">
                     <div class=" row">
                         <div class="form-group col text-white">
-                            <label for="fname">Name</label>
+                            <label for="fname">
+                                <h5>Name <span class="redtext">*</span></h5>
+                            </label>
                             <input type="text" id="name" name="name" class="form-control" placeholder="Name">
                         </div>
                         <div class="form-group col text-white">
-                            <label for="exampleFormControlInput1">Phone Number</label>
+                            <label for="exampleFormControlInput1">
+                                <h5>Phone Number <span class="redtext">*</span></h5>
+                            </label>
                             <input type="tel" class="form-control" placeholder="Phone" id="phone" name="phone">
                         </div>
                     </div>
-                    <div class="form-group text-white">
-                        <label for="inputAddress">Address</label>
+                    <div class="form-group text-white" id="form1">
+                        <label for="inputAddress">
+                            <h5>Address <span class="redtext">*</span></h5>
+                        </label>
                         <input type="text" class="form-control" id="inputAddress" name="inputAddress"
                             placeholder="Your Address Line 1">
                     </div>
                     <div class="form-group text-white">
-                        <label for="inputAddress2">Address 2</label>
+                        <label for="inputAddress2">
+                            <h5>Address 2</h5>
+                        </label>
                         <input type="text" class="form-control" id="inputAddress2" placeholder="Your Address Line 2"
                             name="inputAddress2">
                     </div>
                     <div class="row">
                         <div class="form-group col-md-4 text-white">
-                            <label for="Email1" class="form-label">Email</label>
+                            <label for="Email1" class="form-label">
+                                <h5>Email</h5>
+                            </label>
                             <input type="email" class="form-control" id="Email1" placeholder="Email" name="Email">
                         </div>
                         <div class="form-group col-md-4 text-white">
-                            <label for="inputState">State</label>
+                            <label for="inputState">
+                                <h5>State</h5>
+                            </label>
                             <select id="inputState" class="form-control" name="State">
                                 <option selected>Choose...</option>
                                 <option>Andhra Prades</option>
@@ -445,14 +458,21 @@
                             </select>
                         </div>
                         <div class="form-group col-md-4 text-white">
-                            <label for="inputZip">Zip</label>
+                            <label for="inputZip">
+                                <h5>Zip</h5>
+                            </label>
                             <input type="text" class="form-control" id="inputZip" name="Zip">
                         </div>
                     </div>
                     <div class="form-group text-white">
-                        <label for="message">Your Comment</label>
+                        <label for="message">
+                            <h5>Your Comment</h5>
+                        </label>
                         <textarea class="form-control" cols="30" rows="10" placeholder="Your Comments Here..."
                             id="message" name="message"></textarea>
+                    </div>
+                    <div>
+                        <h5 style="color: white;">Must fill the <span class="redtext">*</span> fields</h5>
                     </div>
                     <div class="form-group text-center">
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
@@ -508,25 +528,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
-    <script>
-        $("#submit-form").submit((e) => {
-            e.preventDefault(); // Prevent default form submission behavior
-            $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbzhaKv1CAGpRG7U4QRfXKefHsnpHqnaNhfD2S8A5gW4K-OIQRikFctVeqeEjCGW1Tb2hw/exec",
-                data: $("#submit-form").serialize(),
-                method: "post",
-                success: function (response) {
-                    alert("Form submitted successfully");
-                    // Clear form fields if needed
-                    $('#submit-form')[0].reset();
-                },
-                error: function (err) {
-                    alert("Something went wrong. Please try again later.");
-                }
-            });
-        });
-    </script>
 
 </body>
 
