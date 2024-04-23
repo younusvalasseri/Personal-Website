@@ -399,111 +399,130 @@
     <section class="bg-secondary bg-gradient p-5" id="contact-section">
         <div class="container">
             <h1 class="text-center text-white">Contact Me</h1>
-            
-            <iframe class="rounded"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26291.695734852758!2d75.60485976453349!3d11.603093605102558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6850873e87d75%3A0x88edb1906a191f31!2sIAT(INSTITUTION%20OF%20AUTOMOBILE%20TECHNOLOGY)!5e0!3m2!1sen!2sin!4v1713832771160!5m2!1sen!2sin"
-                width="100%" height="300rem" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
 
             <div class="row">
-                <form id="submit-form" action="" onsubmit="return validate()">
-                    <div class=" row">
-                        <div class="form-group col text-white">
-                            <label for="fname">
-                                <h5>Name <span class="redtext">*</span></h5>
-                            </label>
-                            <input type="text" id="name" name="name" class="form-control" placeholder="Name">
-                        </div>
-                        <div class="form-group col text-white">
-                            <label for="exampleFormControlInput1">
-                                <h5>Phone<span class="redtext">*</span></h5>
-                            </label>
-                            <input type="tel" class="form-control" placeholder="Phone" id="phone" name="phone">
-                        </div>
-                    </div>
-                    <div class="form-group text-white" id="form1">
-                        <label for="inputAddress">
-                            <h5>Address <span class="redtext">*</span></h5>
-                        </label>
-                        <input type="text" class="form-control" id="inputAddress" name="inputAddress"
-                            placeholder="Your Address Line 1">
-                    </div>
-                    <div class="form-group text-white">
-                        <label for="inputAddress2">
-                            <h5>Address 2</h5>
-                        </label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Your Address Line 2"
-                            name="inputAddress2">
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-md-4 text-white">
-                            <label for="Email1" class="form-label">
-                                <h5>Email</h5>
-                            </label>
-                            <input type="email" class="form-control" id="Email1" placeholder="Email" name="Email">
-                        </div>
-                        <div class="form-group col-md-4 text-white">
-                            <label for="inputState">
-                                <h5>State</h5>
-                            </label>
-                            <select id="inputState" class="form-control" name="State">
-                                <option selected>Choose...</option>
-                                <option>Andhra Prades</option>
-                                <option>Arunachal Pradesh</option>
-                                <option>Assam</option>
-                                <option>Bihar</option>
-                                <option>Chhattisgarh</option>
-                                <option>Goa</option>
-                                <option>Gujarat</option>
-                                <option>Haryana</option>
-                                <option>Himachal Pradesh</option>
-                                <option>Jharkhand</option>
-                                <option>Karnataka</option>
-                                <option>Kerala</option>
-                                <option>Madhya Pradesh</option>
-                                <option>Maharashtra</option>
-                                <option>Manipur</option>
-                                <option>Meghalaya</option>
-                                <option>Mizoram</option>
-                                <option>Nagaland</option>
-                                <option>Punjab</option>
-                                <option>Rajasthan</option>
-                                <option>Sikkim</option>
-                                <option>Tamil Nadu</option>
-                                <option>Telangana</option>
-                                <option>Tripura</option>
-                                <option>Uttarakhand</option>
-                                <option>Uttar Pradesh</option>
-                                <option>West Bengal</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-4 text-white">
-                            <label for="inputZip">
-                                <h5>Zip</h5>
-                            </label>
-                            <input type="text" class="form-control" id="inputZip" name="Zip">
-                        </div>
-                    </div>
-                    <div class="form-group text-white">
-                        <label for="message">
-                            <h5>Your Comment</h5>
-                        </label>
-                        <textarea class="form-control" cols="30" rows="10" placeholder="Your Comments Here..."
-                            id="message" name="message"></textarea>
-                    </div>
-                    <div>
-                        <h5 style="color: white;">Must fill the <span class="redtext">*</span> fields</h5>
-                    </div>
-                    <div class="form-group text-center">
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+                <div class="col-md-6 p-5"><iframe class="rounded"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26291.695734852758!2d75.60485976453349!3d11.603093605102558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6850873e87d75%3A0x88edb1906a191f31!2sIAT(INSTITUTION%20OF%20AUTOMOBILE%20TECHNOLOGY)!5e0!3m2!1sen!2sin!4v1713832771160!5m2!1sen!2sin"
+                        width="100%" height="300rem" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="personal pt-3 text-white">
+                        <h4>Email:</h4>
+                        <p>
+                            younusv@gmail.com
+                        </p>
+                        <h4>Phone:</h4>
+                        <p>
+                            8982 777 677
+                        </p>
+                        <h4>Phone:</h4>
+                        <p>
+                            Edakkadan Plaza, above Axis Bank Branch, Edodi, Vatakara, Kerala 673101
+                        </p>
                     </div>
 
-                </form>
+                </div>
+                <div class="col-md-6">
+                    <form id="submit-form" action="" onsubmit="return validate()">
+                        <div class=" row">
+                            <div class="form-group col text-white">
+                                <label for="fname">
+                                    <h5>Name <span class="redtext">*</span></h5>
+                                </label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="form-group col text-white">
+                                <label for="exampleFormControlInput1">
+                                    <h5>Phone<span class="redtext">*</span></h5>
+                                </label>
+                                <input type="tel" class="form-control" placeholder="Phone" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group text-white" id="form1">
+                            <label for="inputAddress">
+                                <h5>Address <span class="redtext">*</span></h5>
+                            </label>
+                            <input type="text" class="form-control" id="inputAddress" name="inputAddress"
+                                placeholder="Your Address Line 1">
+                        </div>
+                        <div class="form-group text-white">
+                            <label for="inputAddress2">
+                                <h5>Address 2</h5>
+                            </label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Your Address Line 2"
+                                name="inputAddress2">
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-4 text-white">
+                                <label for="Email1" class="form-label">
+                                    <h5>Email</h5>
+                                </label>
+                                <input type="email" class="form-control" id="Email1" placeholder="Email" name="Email">
+                            </div>
+                            <div class="form-group col-md-4 text-white">
+                                <label for="inputState">
+                                    <h5>State</h5>
+                                </label>
+                                <select id="inputState" class="form-control" name="State">
+                                    <option selected>Choose...</option>
+                                    <option>Andhra Prades</option>
+                                    <option>Arunachal Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Bihar</option>
+                                    <option>Chhattisgarh</option>
+                                    <option>Goa</option>
+                                    <option>Gujarat</option>
+                                    <option>Haryana</option>
+                                    <option>Himachal Pradesh</option>
+                                    <option>Jharkhand</option>
+                                    <option>Karnataka</option>
+                                    <option>Kerala</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Maharashtra</option>
+                                    <option>Manipur</option>
+                                    <option>Meghalaya</option>
+                                    <option>Mizoram</option>
+                                    <option>Nagaland</option>
+                                    <option>Punjab</option>
+                                    <option>Rajasthan</option>
+                                    <option>Sikkim</option>
+                                    <option>Tamil Nadu</option>
+                                    <option>Telangana</option>
+                                    <option>Tripura</option>
+                                    <option>Uttarakhand</option>
+                                    <option>Uttar Pradesh</option>
+                                    <option>West Bengal</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4 text-white">
+                                <label for="inputZip">
+                                    <h5>Zip</h5>
+                                </label>
+                                <input type="text" class="form-control" id="inputZip" name="Zip">
+                            </div>
+                        </div>
+                        <div class="form-group text-white">
+                            <label for="message">
+                                <h5>Your Comment</h5>
+                            </label>
+                            <textarea class="form-control" cols="30" rows="10" placeholder="Your Comments Here..."
+                                id="message" name="message"></textarea>
+                        </div>
+                        <div>
+                            <h5 style="color: white;">Must fill the <span class="redtext">*</span> fields</h5>
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+
             </div>
         </div>
 
     </section>
+    
     <footer class="bg-dark" id="footer-section">
         <div class="container">
             <div class="row">
