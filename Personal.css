@@ -200,7 +200,7 @@
 
 @media screen and (max-width: 1399px) and (min-width: 768px) {
     .services {
-        height: 22rem !important;
+        white-space: nowrap;
         align-items: center;
 
     }
@@ -208,7 +208,7 @@
 
 @media screen and (max-width: 1399px) and (min-width: 768px) {
     .experiences {
-        height: 22rem !important;
+        white-space: nowrap;
         align-items: center;
 
     }
