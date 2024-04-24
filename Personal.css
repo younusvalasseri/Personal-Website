@@ -35,11 +35,11 @@
     background-color: white;
 }
 
-/*.container img {
+.img-shadow {
     -webkit-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
-}*/
+}
 
 .progress {
     background-color: rgb(217, 206, 206);
