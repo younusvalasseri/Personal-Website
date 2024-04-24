@@ -8,6 +8,8 @@
     -webkit-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -15,6 +17,8 @@
     -webkit-box-shadow: inset 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
     box-shadow: inset 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: row;
 }
 
 .custom-bg-hover:hover {
@@ -31,54 +35,52 @@
     background-color: white;
 }
 
-.container img {
+/*.container img {
     -webkit-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.75);
-}
-
+}*/
 
 .progress {
     background-color: rgb(217, 206, 206);
     justify-content: flex-start;
-    border-radius: 3rem;
-    align-items: center;
+    vertical-align: middle;
     position: relative;
-    display: flex;
-    height: 1.6rem;
+    display: flex !important;
+    height: 1.8rem !important;
     width: 100%;
 
 }
 
 .pro-bar1 {
     animation: load1 3s normal forwards;
-    border-radius: 3rem;
+    border-radius: 2rem;
     background-color: black;
-    height: 1.6rem;
+    height: 1.8rem;
     width: 0;
 }
 
 .pro-bar2 {
     animation: load2 3s normal forwards;
-    border-radius: 3rem;
+    border-radius: 2rem;
     background-color: black;
-    height: 1.6rem;
+    height: 1.8rem;
     width: 0;
 }
 
 .pro-bar3 {
     animation: load3 3s normal forwards;
-    border-radius: 3rem;
+    border-radius: 2rem;
     background-color: black;
-    height: 1.6rem;
+    height: 1.8rem;
     width: 0;
 }
 
 .pro-bar4 {
     animation: load4 3s normal forwards;
-    border-radius: 3rem;
+    border-radius: 2rem;
     background-color: black;
-    height: 1.6rem;
+    height: 1.8rem;
     width: 0;
 }
 
@@ -174,6 +176,7 @@
 /* Media query for smaller screens */
 @media screen and (max-width: 767px) {
 
+
     /* Adjust the font size for smaller screens */
     .card-text {
         font-size: 14px;
@@ -195,12 +198,11 @@
     color: red;
 }
 
-
-
 @media screen and (max-width: 1399px) and (min-width: 768px) {
     .services {
         height: 22rem !important;
         align-items: center;
+
     }
 }
 
@@ -208,5 +210,68 @@
     .experiences {
         height: 22rem !important;
         align-items: center;
+
+    }
+}
+
+
+.hero-text {
+    align-items: center;
+    left: 0;
+    animation: slideDown .5s linear;
+}
+
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        scale: .5;
+        translate: 0 -100%;
+        z-index: 9999;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+        translate: 0 0;
+        z-index: 1;
+    }
+}
+
+.container {
+    position: relative;
+}
+
+.first-div {
+    padding-top: 20px;
+
+}
+
+.second-div {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.overlay {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    .second-div {
+        padding-top: 12rem;
+        position: absolute;
+        width: auto;
+    }
+
+    .overlay {
+        opacity: .4;
+    }
+
+    .hero-text {
+        left: 0;
+        animation: slideDown .5s linear;
     }
 }
