@@ -280,10 +280,28 @@
     }
 }
 
-.scroll-down-animation {
+
+
+@media screen and (max-width: 767px) {
+    .scroll-down-animation {
+        opacity: 0;
+        transform: scale(0.2);
+        transition: opacity 1s,
+            transform 1s;
+    }
+
+    /* Add animation when activated */
+    .animation-active {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.leftRightAnimation {
     opacity: 0;
     transform: scale(0.2);
-    transition: opacity 1s, transform 1s;
+    transition: opacity 1s,
+        transform 2s;
 }
 
 /* Add animation when activated */
