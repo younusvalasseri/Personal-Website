@@ -35,7 +35,6 @@ function validate() {
 }
 
 
-
 // JavaScript
 function isInViewport(element) {
     let rect = element.getBoundingClientRect();
@@ -59,4 +58,5 @@ function animateScrollCards() {
 
 window.addEventListener('DOMContentLoaded', animateScrollCards);
 window.addEventListener('scroll', animateScrollCards);
+
 
