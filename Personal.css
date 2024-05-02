@@ -414,4 +414,21 @@
     background-repeat: no-repeat;
 }
 
+.desktopView {
+    display: block;
+}
+
+.mobileView {
+    display: none;
+}
+
 /* Media query to adjust column layout for mobile devices */
+@media screen and (max-width: 767px) {
+    .desktopView {
+        display: none;
+    }
+
+    .mobileView {
+        display: block;
+    }
+}
